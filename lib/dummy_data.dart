@@ -1,57 +1,57 @@
 import 'package:flutter/material.dart';
 
-import './models/category.dart';
-import './models/meal.dart';
+import 'package:meal/models/category.dart';
+import 'package:meal/models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
   Category(
     id: 'c1',
-    title: 'Italian',
+    title: 'আমিষ',
     color: Colors.purple,
   ),
   Category(
     id: 'c2',
-    title: 'Quick & Easy',
+    title: 'নিরামিষ',
     color: Colors.red,
   ),
   Category(
     id: 'c3',
-    title: 'Hamburgers',
+    title: 'স্বাস্থ্যকর',
     color: Colors.orange,
   ),
   Category(
     id: 'c4',
-    title: 'German',
+    title: 'Snacks',
     color: Colors.amber,
   ),
   Category(
     id: 'c5',
-    title: 'Light & Lovely',
+    title: 'মুঘলাই',
     color: Colors.blue,
   ),
   Category(
     id: 'c6',
-    title: 'Exotic',
+    title: 'চাইনিজ খাবার',
     color: Colors.green,
   ),
   Category(
     id: 'c7',
-    title: 'Breakfast',
+    title: 'Contenental',
     color: Colors.lightBlue,
   ),
   Category(
     id: 'c8',
-    title: 'Asian',
+    title: 'পানীয়',
     color: Colors.lightGreen,
   ),
   Category(
     id: 'c9',
-    title: 'French',
+    title: 'রাস্তার খাবার',
     color: Colors.pink,
   ),
   Category(
     id: 'c10',
-    title: 'Summer',
+    title: 'মিষ্টিমুখ',
     color: Colors.teal,
   ),
 ];
@@ -61,30 +61,41 @@ const DUMMY_MEALS = const [
     id: 'm1',
     categories: [
       'c1',
-      'c2',
+      'c8',
+      'c10'
     ],
-    title: 'Spaghetti with Tomato Sauce',
+    title: 'গোয়ান ফিশ কারি',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
     imageUrl:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+    'https://www.banglaadda.com/Recp/Images/9b7aac77-4ed9-47bb-a26d-945e42ed033f_9A8E71AD-EF78-4DC4-9E94-3BF36BBEEC1F.jpeg',
     duration: 20,
     ingredients: [
-      '4 Tomatoes',
-      '1 Tablespoon of Olive Oil',
-      '1 Onion',
-      '250g Spaghetti',
-      'Spices',
-      'Cheese (optional)'
+      'দুটি পমফ্রেট মাছ',
+      'নারকেল কোরানো - আধা কাপ',
+      'জিরে- এক চামচ',
+      'ধনে- দুই চামচ',
+      'হলুদ- বড় এক চামচ',
+      'কাঁচালঙকা- দুটি',
+      'ভালো জাতের টক- মিষ্টি তেঁতুল- ছোট পাতিলেবুর মাপের',
+      'রসুন- তিন কোয়া',
+      'গোলমরিচ- পাঁচ, ছয়টা',
+      'পেঁয়াজ- অর্ধেকটা, সরু করে কেটে নেওয়া',
+      'মৌরি- এক চতুর্থাংশ চামচ',
+      'অল্প ধনেপাতা',
+      'এক্সট্রা ভার্জিন',
+      'কোলড প্রেসড অলিভ অয়েল- এক চামচ'
     ],
     steps: [
-      'Cut the tomatoes and the onion into small pieces.',
-      'Boil some water - add salt to it once it boils.',
-      'Put the spaghetti into the boiling water - they should be done in about 10 to 12 minutes.',
-      'In the meantime, heaten up some olive oil and add the cut onion.',
-      'After 2 minutes, add the tomato pieces, salt, pepper and your other spices.',
-      'The sauce will be done once the spaghetti are.',
-      'Feel free to add some cheese on top of the finished dish.'
+      'গোয়ান ফিস কারি বানাতে হলে প্রথমে পমফ্রেট মাছের গা ছুরি দিয়ে চিরে মাছ দুটিকে অর্ধেক করে কেটে নিন।ম',
+      'এরপর মাছে ঘষে ঘষে সমস্ত অংশে লবণ আর হলুদ মাখিয়ে মিনিট পনের ম্যারিনেট করে রাখুন।',
+      'পিনিট পনের পরে মাছের টুকরোগুলো ধুয়ে অল্প লবণ, হলুদ মাখিয়ে নেবেন।',
+      'পেঁয়াজে লবণ মাখিয়ে মিনিট দশেক ম্যারিনেট করুন।',
+      'ধনেপাতা, কাঁচালঙকা, আর পেঁয়াজ ছাড়া বাকি সমস্ত মশলাকে জল দিয়ে ইচ্ছেমত ঘনত্বে বেটে নিন। তেঁতুলের ছেঁকে নেওয়া জল সহ। বেশ একট লালচে রং হবে। ',
+      'রান্নার পাত্রে অল্প আঁচে এক্সট্রা ভার্জিন, কোলড প্রেসড অলিভ অয়েল দিয়ে পেঁয়াজগুলো নাড়াচাড়া করে নিন।',
+      'পেঁয়াজের টুকরোগুলো স্বচ্ছ হয়ে এলে মাছ দিয়ে দুই পিঠটা সাঁতলে নিন।',
+      'এরপরে বাটা মশলা মাছের ওপরে দিয়ে কম আঁচে ঢেকে মিনিট পনের রান্না করুন।',
+      'কাঁচালঙকা ধনেপাতা সাজিয়ে পরিবেশন করুন।'
     ],
     isGlutenFree: false,
     isVegan: true,
@@ -94,25 +105,86 @@ const DUMMY_MEALS = const [
   Meal(
     id: 'm2',
     categories: [
-      'c2',
+      'c1',
+      'c4',
+      'c6'
     ],
-    title: 'Toast Hawaii',
+    title: 'স্টাফড চিকেন ব্রেস্ট',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
     imageUrl:
-    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
-    duration: 10,
+    'https://www.banglaadda.com/Recp/Images/ffc6bc51-716e-45c7-b5cb-b2227a7e20ed_6102D839-0E69-495A-80B2-616483616470.jpeg',
+    duration: 30,
     ingredients: [
-      '1 Slice White Bread',
-      '1 Slice Ham',
-      '1 Slice Pineapple',
-      '1-2 Slices of Cheese',
-      'Butter'
+      'চিকেন ব্রেস্ট- দুটি। একটু মোটা দেখে নেবেন।',
+      'অলিভ অয়েল- চার বড় চামচ।',
+      'রসুনের কোয়া- চারটি।',
+      'পার্সলি- এক চামচ কুচোনো।',
+      'লবণ- স্বাদমত।',
+      'ডিম- কুসুম ছাড়া, সাদা অংশ- দুটি।',
+      'পালং শাক- এক কাপ, কুচোনো।',
+      'মেয়োনিজ- আমি অ্যাভোকাডো অয়েলের লো ফ্যাট মেয়োনিজ নিয়েছি। এক চামচ।',
+      'বাংলার খাঁটি কাসুন্দি- এক চামচ।',
+      'গোলমরিচ- আধা চামচ।',
+      'panko breadcrumbs ( অন্য হলেও চলবে)- এক কাপ।',
+      'ময়দা- অল্প।'
     ],
     steps: [
-      'Butter one side of the white bread',
-      'Layer ham, the pineapple and cheese on the white bread',
-      'Bake the toast for round about 10 minutes in the oven at 200°C'
+      'চিকেন ব্রেস্ট দুটিতে লবণ আর গেলমরিচ মাখিয়ে একপাশে রেখে দিন।',
+      'চএরপরে পুর তৈরি করতে, রসুন কুচি একচামচ তেলে লালচে করে ভেজে তাতে পালং শাক দিন।',
+      'চশাক নরম হয়ে গেলে আগুন থেকে সরিয়ে পার্সলি, মেয়োনিজ আর কাসুন্দি দিয়ে মেখে নিন।',
+      'চিকেন ব্রেস্ট প্লেট এ রেখে ছোট ছুরি দিয়ে খুব সাবধানে এর মাঝামাঝি অংশ কেটে একটি পকেট তৈরি করুন।',
+      'সেখানে ঠান্ডা পুর ঠেসে ভরে দিন।',
+      'তিনটে পাত্রে পরপর ময়দা, ডিম এবং panko breadcrumbs রাখুন।',
+      'চিকেনের ব্রেস্ট সাবধানে ধরে ময়দাতে গড়িয়ে, ডিমে চুবিয়ে, ব্রেড ক্রাম্বে আবার গড়িয়ে একটি ওভেন নিরাপদ পাত্রে তেল ছিটিয়ে পর পর সাজান।',
+      'বাকি অলিভ অয়েল চিকেন ব্রেস্ট এর ওপর ছিটিয়ে দিন।',
+      'এরপর ৩৫০ ডিগ্রি ফারেনহাইটে (149 degrees C) পনের মিনিট মত বেক করুন।',
+      'লালচে ভাব আনতে শেষে মিনিট পাঁচেক ব্রয়েল করতে পারেন।',
+      'আগে থেকে যদি পুরভরা চিকেন ব্রেস্ট বানিয়ে রেফ্রিজারেট করে রাখেন তবে ইচ্ছেমত সময়ে বেক করে বা ভেজে খাওয়া যায়।'
+    ],
+    isGlutenFree: false,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: true,
+  ),
+  Meal(
+    id: 'm3',
+    categories: [
+      'c1',
+      'c5',
+      'c7'
+    ],
+    title: 'চিংড়িকারি',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+    'https://www.banglaadda.com/Recp/Images/ecc55c6f-301e-4ee0-8f8d-e169e623a6a7_download.jpg',
+    duration: 40,
+    ingredients: [
+      'চিংড়িমাছ মাঝারি আকারের- প্রয়োজনমত',
+      'পোস্তবাটা - দু টেবল চামচ',
+      'কাজুবাদাম - গোটা আষ্টেক',
+      'কিসমিস - গোটা দশ-বারো',
+      'শুকনো লঙ্কা - দুটো',
+      'গোটাজিরে - হাফ চামচ',
+      'টম্যাটো কুচি - একটা বড়',
+      'কাঁচা লঙ্কা - গোটা দুই',
+      'ধনেপাতা - অল্প',
+      'সাদা তেল - দু চামচ',
+      'মৌরী- হাফ চামচ',
+      'নুন‚ মিষ্টি স্বাদমত',
+      'আদা - অল্প',
+      'গোটা গরম মশলা - দুটো এলাচ‚ চারটে লবঙ্গ আর  ছোট দারুচিনির টুকরো'
+    ],
+    steps: [
+      'কাঁচা চিংড়িগুলো নুন-হলুদ মাখিয়ে রেখে দিন|',
+      'এবার কড়াইতে তেল বসানোর আগে আমাদের মশলাটা বানিয়ে নিতে হবে|',
+      'কারণ এই পদটি অতি দ্রুত বানানো যায়| কাজু‚ কিসমিস‚ টম্যাটো‚ আদা‚ ধনেপাতা‚কাঁচালঙ্কা‚ মৌরী সব একসাথে বেঁটে নিতে হবে মিক্সিতে|',
+      'এবার কড়াইতে সাদা তেল দিয়ে‚ তেল গরম হলে গোটা গরম মসলা‚ শুকনো লঙ্কা  আর জিরে ফোড়ন দিয়ে কাঁচা চিংড়িগুলো একটু নাড়াচাড়া করে তাতে পোস্তবাটা সহ বাকি পেষা মশলাগুলো আর নুন দিয়ে  কষতে হবে যতক্ষণ না তেল ছেড়ে আসে|',
+      'তেল ছেড়ে এলে পেষা মশলার ধোয়া জলটা দিয়ে অল্প ফুটিয়ে মিস্টি দিয়ে  নামিয়ে নিতে হবে চিংড়িমাছের কারি|',
+      'পদটা হালকা মিস্টি মিস্টি হবে|',
+      'রুটি বা ভাত সবের সাথেই খেতে পারেন| ',
+      'চট্জলদি বানিয়ে পরিবেশন করুন চিংড়িকারি|'
     ],
     isGlutenFree: false,
     isVegan: false,
@@ -120,31 +192,32 @@ const DUMMY_MEALS = const [
     isLactoseFree: false,
   ),
   Meal(
-    id: 'm3',
+    id: 'm4',
     categories: [
       'c2',
       'c3',
+      'c9'
     ],
-    title: 'Classic Hamburger',
+    title: 'বিনা তেলের আমের চাটনি',
     affordability: Affordability.Pricey,
     complexity: Complexity.Simple,
     imageUrl:
-    'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+    'https://www.banglaadda.com/Recp/Images/879a51be-ec91-47f0-ad1e-285d614779de_D9915C58-666E-4E6C-96B8-4A91FF75A341.jpeg',
     duration: 45,
     ingredients: [
-      '300g Cattle Hack',
-      '1 Tomato',
-      '1 Cucumber',
-      '1 Onion',
-      'Ketchup',
-      '2 Burger Buns'
+      'কাঁচা আম।',
+      'একটু চিনি',
+      'লেবুর রস',
+      'পাঁচফোড়ন',
+      'আদা',
+      'শুকনো লঙ্কা',
+      'লবণ।'
     ],
     steps: [
-      'Form 2 patties',
-      'Fry the patties for c. 4 minutes on each side',
-      'Quickly fry the buns for c. 1 minute on each side',
-      'Bruch buns with ketchup',
-      'Serve burger with tomato, cucumber and onion'
+      'কাঁচা আম খোসাসুদ্ধু সেদ্ধ করে নিন।',
+      'ঠান্ডা হলে হাতে চিপে পাল্প ( আমের মাংস?) বের করে নিন।',
+      'শুকনো তাওয়ায় লঙ্কা, পাঁচফোড়ন নেড়েচেড়ে হামামদিন্তায় গুঁড়িয়ে নিন।',
+      'তাওয়ায় আমের মাংস দিয়ে তাতে লব্ণ, লেবুর রস, আদা থেতো, অল্প চিনি কারণ টকটক থাকলে ভালো লাগে, পাঁচফোড়ন আর শুকনো লঙ্কার গুঁড়ো ছিটিয়ে নেড়েচেড়ে নামিয়ে ফেলুন।',
     ],
     isGlutenFree: false,
     isVegan: false,
@@ -152,34 +225,39 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
   Meal(
-    id: 'm4',
+    id: 'm5',
     categories: [
+      'c2',
       'c4',
+      'c10',
+      'c3'
     ],
-    title: 'Wiener Schnitzel',
+    title: 'সাবুদানার বড়া',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Challenging,
     imageUrl:
-    'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+    'https://www.banglaadda.com/Recp/Images/4ea71a76-d5f2-4cbe-94d5-89f662047e2a_D8B14819-4157-4AFF-B5AD-E1CCC40E600B.jpeg',
     duration: 60,
     ingredients: [
-      '8 Veal Cutlets',
-      '4 Eggs',
-      '200g Bread Crumbs',
-      '100g Flour',
-      '300ml Butter',
-      '100g Vegetable Oil',
-      'Salt',
-      'Lemon Slices'
+      'সাবুদানা -এক কাপ',
+      'এক কাপ সেদ্ধ আলু ঘেষনি দিয়ে ঘষে নেওয়া।',
+      'আদা- দেড় ইঞ্চি, সরু করে কেটে নেওয়া।',
+      'কাঁচা লঙ্কা- চারটে, কুচিয়ে নেওয়া।',
+      'কারি পাতা- ১০-১২ টা।',
+      'চিনা বাদাম- আধা কাপ। নুন দিয়ে, খুব অল্প  তেলে ভেজে মোটা করে গুঁড়ো করে নেওয়া।',
+      'জিরে- এক চামচ।',
+      'নুন-স্বাদ মত।',
+      'দই বা লেবুর রস- দেড় চামচ।',
+      'ধনেপাতা- ১/৪ কাপ।',
+      'চিনি- আধা চামচ।',
+      'বেকিং সোডা- এক চিমটে।',
+      'ভাজার জন্য পরিমাণমত তেল। ( ভাজাভুজির জন্যে নারকেল তেল বা ঘি শ্রেষ্ঠ)।'
     ],
     steps: [
-      'Tenderize the veal to about 2–4mm, and salt on both sides.',
-      'On a flat plate, stir the eggs briefly with a fork.',
-      'Lightly coat the cutlets in flour then dip into the egg, and finally, coat in breadcrumbs.',
-      'Heat the butter and oil in a large pan (allow the fat to get very hot) and fry the schnitzels until golden brown on both sides.',
-      'Make sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes ‘fluffy’.',
-      'Remove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.',
-      'Place the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.'
+      'তেল ছাড়া সমস্ত উপকরণগুলি ভালো করে মেখে নিন।',
+      'এবারে একটা বাটিতে জল নিয়ে, দুই হাতের তালু ভিজিয়ে গোল বড়া বানিয়ে, দুই তালুর চাপে সেগুলোকে চ্যাপটা করে নিন যাতে কম তেলে ভাজা যায়।'
+          'আরো কায়দা করতে চাইলে আঙুল দিয়ে বড়ার মাঝখানে গর্ত করে নিতে পারেন। কিন্তু দরকারী কিছু নয়।',
+      'তেল মিডিয়াম গরম করে সাবুদানার বড়াগুলি সোনালি মুচমুচে করে ভেজে ডাল-ভাত বা স্ন্যাক হিসেবে খেয়ে দেখুন।'
     ],
     isGlutenFree: false,
     isVegan: false,
@@ -187,35 +265,55 @@ const DUMMY_MEALS = const [
     isLactoseFree: false,
   ),
   Meal(
-    id: 'm5',
-    categories: [
-      'c2'
-          'c5',
-      'c10',
-    ],
-    title: 'Salad with Smoked Salmon',
+    id: 'm6',
+    categories: ['c2','c6','c4'],
+    title: 'স্বাস্থ্যকর পিৎজা',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Simple,
     imageUrl:
-    'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+    'https://www.banglaadda.com/Recp/Images/729c2641-35e4-4be7-8ae3-565073237f9e_BD90D530-1F38-4AF8-A570-07DAAC2BCB3B.jpeg',
     duration: 15,
     ingredients: [
-      'Arugula',
-      'Lamb\'s Lettuce',
-      'Parsley',
-      'Fennel',
-      '200g Smoked Salmon',
-      'Mustard',
-      'Balsamic Vinegar',
-      'Olive Oil',
-      'Salt and Pepper'
+      'পুরো গমের (Whole wheat) আটা- এক কাপ।',
+      'নুন- আধা, বা এক চা চামচ। ( স্বাদমত)।',
+      'বেকিং সোডা- দুই চিমটে।',
+      'বেকিং পাউডার- আধ চা চামচ।',
+      'চিনি- দুই চা চামচ চিনি।',
+      'দই- ওপরের উপকরণগুলি মেখে নরম বল বানাতে য্তটা চাই।',
+      'অলিভ অয়েল- তিন টেবিল চামচ।',
+      'চিলি সস- দুই টেবিল চামচ।',
+      'পিৎজা সস বা কেচাপ- দুই টেবিল চামচ।',
+      'mozzarella cheese আর cheddar cheese- চার টেবিল চামচ।',
+      'গলানো মাখন- দুই চামচ।',
+      'টপিংসের জন্য মনমত নিরামিষ বা আমিষ জিনিস ব্যবহার করতে পারেন। আমি নিয়েছি-',
+      'বেল পেপার লাল ও হলুদ- সরু, লম্বা করে কাটা।',
+      'পালং শাক- কুচোনো।',
+      'অলিভ- কয়েকটা।'
     ],
     steps: [
-      'Wash and cut salad and herbs',
-      'Dice the salmon',
-      'Process mustard, vinegar and olive oil into a dessing',
-      'Prepare the salad',
-      'Add salmon cubes and dressing'
+      ' পিৎজা বানাতে গেলে প্রথমে আটা\, নুন\, বেকিং সোডা\, বেকিং পাউডার আঙুল দিয়ে ভালো করে মিশিয়ে নিন। ',
+
+      'এবার চিনি দিয়ে পুরোটা ভালো করে মেশান।',
+
+      'দই দিয়ে শুকনো উপকরণগুলি ভালো করে রুটির আটার মত করে মাখুন। আমরা কিন্তু জলের ব্যবহার করব না, তার পরিবর্তে দই দিয়ে ডো (dough) বানাব। আর যেহেতু ঈষ্টের ব্যবহার নেই, তাই দইয়ের ব্যবহার অনিবার্য!',
+
+      'খুব করে মাখতে হবে মিনিট পাঁচেক ধরে। দেখবেন মন্ডটা হাল্কা, চিটচিটে মত হয়েছে।',
+
+      'এবার তেল মিশিয়ে আবার মিনিট পাঁচেক ধরে ঠেসে মাখুন। ( মাখাটা ঠিকমত হওয়া খুব জরুরী)।',
+
+      'এবার মন্ডটাকে দুটো সমান ভাগে ভাগ করে নিন। ( আমরা ৭ ইঞ্চির দুটি পিৎজা বানাবো।',
+
+      'রুটি বানাবার মত করে অংশদুটি শুকনো আটাগুঁড়ো লাগিয়ে বেলে নিন সাত ইঞ্চি ব্যাসার্ধে।',
+
+      'চারপাশে আধা ইঞ্চি জায়গা ছেড়ে সসগুলো পিৎজার বেস এ লাগিয়ে নিন।',
+
+      'চিজ ছিটিয়ে দিন।',
+
+      'টপিংস সাজান।',
+
+      'এবার ৩৫০ ডিগ্রি ফারেনহাইট, মানে ১৭৬.৬ ডিগ্রি সেলসিয়াসে মিনিট পনের বেক করুন, বা যতক্ষণ পিৎজার চিজ গলে গিয়ে ক্রাস্টে ( চারিপাশের আধা ইঞ্চি ছাড়া জায়গাতে বাদামী ছোপ লাগছে, ততক্ষণ বেক করুন।',
+
+      'যদি ওভেন না থাকে, তবে একটা গভীর কড়াইয়ে বেশ খানিকটা নুন দিয়ে একটা ধাতুর রিং বা বাটি বসিয়ে তার ওপরে স্টিলের থালায় পিৎজা রেখে, ভালো করে ঢেকে মিনিট দশেক ভাপে রান্না করুন। তারপরে খুলে খুলে দেখবেন যতক্ষণ না পিৎজাটা ভালোভাবে বেক হয়েছে।'
     ],
     isGlutenFree: true,
     isVegan: false,
@@ -227,6 +325,7 @@ const DUMMY_MEALS = const [
     categories: [
       'c6',
       'c10',
+      'c3'
     ],
     title: 'Delicious Orange Mousse',
     affordability: Affordability.Affordable,
@@ -262,6 +361,7 @@ const DUMMY_MEALS = const [
     id: 'm7',
     categories: [
       'c7',
+      'c2',
     ],
     title: 'Pancakes',
     affordability: Affordability.Affordable,
@@ -293,6 +393,7 @@ const DUMMY_MEALS = const [
     id: 'm8',
     categories: [
       'c8',
+      'c1',
     ],
     title: 'Creamy Indian Chicken Curry',
     affordability: Affordability.Pricey,
@@ -326,6 +427,8 @@ const DUMMY_MEALS = const [
     id: 'm9',
     categories: [
       'c9',
+      'c6',
+      'c4',
     ],
     title: 'Chocolate Souffle',
     affordability: Affordability.Affordable,

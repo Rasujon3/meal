@@ -55,7 +55,7 @@ class MealDetailScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            buildSectionTitle(context, 'Ingredients'),
+            buildSectionTitle(context, 'উপকরণ'),
             buildContainer(
               ListView.builder(
                 itemBuilder: (ctx, index) => Card(
@@ -70,7 +70,7 @@ class MealDetailScreen extends StatelessWidget {
                 itemCount: selectedMeal.ingredients.length,
               ),
             ),
-            buildSectionTitle(context, 'Steps'),
+            buildSectionTitle(context, 'প্রণালী'),
             buildContainer(
               ListView.builder(
                 itemBuilder: (ctx, index) => Column(
